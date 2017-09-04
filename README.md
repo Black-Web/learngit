@@ -11,6 +11,8 @@ second,`cd dir` and then **`git init`**
 
 **`git add README.md`**
 
+**`git rm filename`** will remove a added file
+
 multiple files is supported:
 
 *`git add file1.c file2.py`*
@@ -44,4 +46,20 @@ while `HEAD^` can be replaced by a *commit id* which indicate the last vertion
 
 ## after roll back
 
-**`git checkout --filename`** equals to modify the file and `git add filename` again
+**`git checkout -- filename`** equals to modify the file and `git add filename` again
+
+>git checkout其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。
+
+# remote repository access
+
+**`ssh-keygen -t rsa -C "youremail@example.com"`** to creat a ssh key first
+
+**`git remote add origin git@github.com:Black-Web/learngit.git`** 
+
+**`git push -u origin master`**
+
+>把本地库的内容推送到远程，用git push命令，实际上是把当前分支master推送到远程。
+
+>由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。
+
+after doing this, just**`git push origin master`** to push local changes to the remote server
