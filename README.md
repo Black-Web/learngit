@@ -25,3 +25,15 @@ multiple files is supported:
 to check if any change has been made yet not commited
 
 **`git diff`** to see what the changes are
+
+## the change log(time line)
+
+**`git log`**
+
+optional arguement: `--pretty=oneline`
+
+## roll back to old versions
+
+git use `HEAD` to indicate the current vertion, which is the latest commited one, and `HEAD^` means the last vertion, `HEAD^^`,`HEAD^^^`...and so on, the shortcut for `HEAD^^^` is `HEAD~3`
+
+**`git reset --hard HEAD^`** to roll back to last commit 
