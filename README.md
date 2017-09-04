@@ -42,4 +42,6 @@ git use `HEAD` to indicate the current vertion, which is the latest commited one
 
 while `HEAD^` can be replaced by a *commit id* which indicate the last vertion
 
-## a clearly stupid doc
+## after roll back
+
+**`git checkout --filename`** equals to modify the file and `git add filename` again
