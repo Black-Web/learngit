@@ -68,7 +68,7 @@ after doing this, just**`git push origin master`** to push local changes to the 
 
 **`git clone git@github.com:Black-Web/hello-world.git`**
 
-# branches and merge
+# branches management
 
 ## creat branch
 
