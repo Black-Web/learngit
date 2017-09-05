@@ -76,3 +76,5 @@ after doing this, just**`git push origin master`** to push local changes to the 
 
 **`git chechout dev`** switch from master to dev
 
+
+**`git log --graph`** to display the edit history graphically
