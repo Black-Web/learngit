@@ -89,4 +89,9 @@ after doing this, just**`git push origin master`** to push local changes to the 
 >
 >删除分支：git branch -d <name>
 
+`git merge <name>` can optionally followed by *--no-ff* 
+
+>带 *--no-off* 参数的merge命令会自动执行一个commit，因此还需要带参数*-m "some comment"* , 执行完可以用 *git log* 查看merge记录
+
 **`git log --graph`** to display the edit history graphically
+
