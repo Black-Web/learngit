@@ -63,3 +63,16 @@ while `HEAD^` can be replaced by a *commit id* which indicate the last vertion
 >由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。
 
 after doing this, just**`git push origin master`** to push local changes to the remote server
+
+## colone a remote repository
+
+**`git clone git@github.com:Black-Web/hello-world.git`**
+
+# branches and merge
+
+## creat branch
+
+**`git branch dev`** will craet new branch *dev*
+
+**`git chechout dev`** switch from master to dev
+
