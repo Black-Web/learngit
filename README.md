@@ -95,3 +95,9 @@ after doing this, just**`git push origin master`** to push local changes to the 
 
 **`git log --graph`** to display the edit history graphically
 
+## stash -- store the current working process
+
+>修复bug时，我们会通过创建新的bug分支进行修复，然后合并，最后删除；
+>
+>当手头工作没有完成时，先把工作现场git stash一下，然后去修复bug，修复后，再git stash pop，回到工作现场。
+
